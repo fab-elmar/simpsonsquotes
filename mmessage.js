@@ -18,19 +18,20 @@ const ranRange = (min, max) => {
 }
 
 
+for (let i = 0; i < 4; i++) {
+    switch (caracater[ranRange(0, caracater.length)]) {
+        case "lisa":
+            console.log("Lisa: ", messagesL[ranRange(0, messagesL.length)])
+            break;
+        case "bart":
+            console.log("Bart: ", messagesB[ranRange(0, messagesB.length)])
+            break;
+        case "homer":
+            console.log("Homer says:", messagesH[ranRange(0, messagesH.length)])
+            break;
+        case "flanders":
+            console.log("Falnders says:", messagesF[ranRange(0, messagesF.length)])
+            break;
 
-switch (caracater[ranRange(0, caracater.length)]) {
-    case "lisa":
-        console.log("Lisa: ", messagesL[ranRange(0, messagesL.length)])
-        break;
-    case "bart":
-        console.log("Bart: ", messagesB[ranRange(0, messagesB.length)])
-        break;
-    case "homer":
-        console.log("Homer says:", messagesH[ranRange(0, messagesH.length)])
-        break;
-    case "flanders":
-        console.log("Falnders says:", messagesF[ranRange(0, messagesF.length)])
-        break;
-
+    }
 }
